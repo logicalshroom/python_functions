@@ -21,7 +21,7 @@ def remove_list(item):
     print(f"The item {item} has been removed from your shopping list.")
 
 def print_list():
-    print(f"Your shopping list includes the following:")
+    print(f"Your shopping list includes the following items:")
     for items in range(len(shop_list)):
         print(shop_list[items])
 
@@ -30,7 +30,7 @@ shop_list = [] #Initiatize list
 print("Welcome, User!\nThis program will help you make a shopping list.")
 action = 1 
 
-while action != 0: # Setting the action to 0 is how we will escape the While loop.
+while action != 0: # I basically want the while loop ro run forever until I break it during the Close statement.
     if shop_list == []:
         print("There's nothing in the list yet!")
     else: #This should format it nicely.
